@@ -1,1 +1,233 @@
 
+/* ===========================
+   FLEXZONE CLOTHING WEBSITE
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7f7f7;
+color:#333;
+line-height:1.6;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111;
+padding:18px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+}
+
+.logo h2{
+color:#fff;
+font-size:30px;
+font-weight:700;
+}
+
+.logo span{
+color:#ddd;
+font-size:14px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+color:#fff;
+font-size:16px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ff3c00;
+}
+
+.header-buttons{
+display:flex;
+gap:15px;
+}
+
+.catalog-btn,
+.quote-btn{
+padding:12px 24px;
+border-radius:30px;
+font-size:15px;
+font-weight:600;
+transition:.3s;
+}
+
+.catalog-btn{
+background:#fff;
+color:#111;
+}
+
+.quote-btn{
+background:#ff3c00;
+color:#fff;
+}
+
+.catalog-btn:hover,
+.quote-btn:hover{
+opacity:.9;
+}
+
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+margin-top:90px;
+position:relative;
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.hero img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.hero-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+text-align:center;
+color:#fff;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:56px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn-red{
+background:#ff3c00;
+color:#fff;
+padding:14px 32px;
+border-radius:35px;
+font-weight:600;
+}
+
+.btn-white{
+background:#fff;
+color:#111;
+padding:14px 32px;
+border-radius:35px;
+font-weight:600;
+}
+
+.btn-red:hover,
+.btn-white:hover{
+transform:translateY(-3px);
+transition:.3s;
+}
+
+/* ===========================
+ABOUT
+=========================== */
+
+.about-home{
+padding:100px 0;
+background:#fff;
+}
+
+.about-home .container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about-content h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about-content p{
+margin-bottom:15px;
+font-size:17px;
+color:#555;
+}
+
+.about-features{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.feature-box{
+background:#f3f3f3;
+padding:25px;
+border-radius:12px;
+text-align:center;
+transition:.3s;
+}
+
+.feature-box i{
+font-size:40px;
+color:#ff3c00;
+margin-bottom:10px;
+}
+
+.feature-box:hover{
+transform:translateY(-8px);
+}
