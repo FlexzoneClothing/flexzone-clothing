@@ -630,4 +630,24 @@ font-size:26px;
     gap:20px;
     flex-wrap:wrap;
 }
+.why-products,
+.cta{
+    padding:80px 10%;
+    text-align:center;
+}
 
+.cta{
+    background:#111;
+    color:#fff;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 30px;
+    color:#ddd;
+}
